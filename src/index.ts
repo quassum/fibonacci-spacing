@@ -2,14 +2,42 @@ interface Options {
   unit: 'px' | 'pt' | '%' | 'none';
 }
 
-const FIBONACCI = [
-  1, 2, 3, 5, 8, 12, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584,
+type FibonacciKey =
+  | 1
+  | 2
+  | 3
+  | 5
+  | 8
+  | 13
+  | 21
+  | 34
+  | 55
+  | 89
+  | 144
+  | 233
+  | 377
+  | 610
+  | 987
+  | 1597
+  | 2584;
+
+type FibonacciSpacing = Record<FibonacciKey, string>;
+
+const FIBONACCI: FibonacciKey[] = [
+  1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584,
 ];
 
 /**
  * Returns Fibonacci Spacing based on the options.
  */
-export const getFibonacciSpacing = (options?: Options) => {
+export const getFibonacciSpacing = (options?: Options): FibonacciSpacing => {
   const { unit = 'px' } = options;
-  return FIBONACCI.map((value) => `${value}${unit === 'none' ? '' : unit}`);
+
+  return FIBONACCI.reduce(
+    (o, val) => ({
+      ...o,
+      [val]: `${val}${unit === 'none' ? '' : unit}`,
+    }),
+    {}
+  ) as FibonacciSpacing;
 };
