@@ -57,7 +57,7 @@ In that case when accessing the values by their fibonacci numbered keys, you wil
 For example, following shows the examples of the values you get:
 
 ```js
-const spacing = getFibonacciSpacing({ unit: 'rem' });
+const spacing = getFibonacciSpacing({ unit: 'rem', invert: true });
 
 spacing[1]; // '1rem'
 spacing[5]; // '0.2rem'
