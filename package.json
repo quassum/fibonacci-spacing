@@ -1,0 +1,47 @@
+{
+  "name": "@quassum/fibonacci-spacing",
+  "version": "1.0.0",
+  "description": "Spacing for your design system, but it's fibonacci!",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build"
+  ],
+  "repository": "https://github.com/quassum/fibonacci-spacing.git",
+  "author": {
+    "name": "Antoni Silvestrovič",
+    "email": "antoni.silvestrovic@gmail.com",
+    "url": "http://antoni.ai/"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "clean": "rimraf build",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch",
+    "prepublishOnly": "yarn build",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+  },
+  "devDependencies": {
+    "@quassum/prettier-config": "^1.0.2",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.1",
+    "@types/node": "14",
+    "@types/prettier": "^2.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.61.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {}
+}
