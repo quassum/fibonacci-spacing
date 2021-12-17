@@ -1,5 +1,6 @@
 interface Options {
-  unit: 'px' | 'pt' | '%' | 'none';
+  unit?: 'px' | 'pt' | '%' | 'none';
+  invert?: boolean;
 }
 
 type FibonacciKey =
@@ -31,12 +32,14 @@ const FIBONACCI: FibonacciKey[] = [
  * Returns Fibonacci Spacing based on the options.
  */
 export const getFibonacciSpacing = (options?: Options): FibonacciSpacing => {
-  const { unit = 'px' } = options;
+  const { unit = 'px', invert } = options;
 
   return FIBONACCI.reduce(
     (o, val) => ({
       ...o,
-      [val]: `${val}${unit === 'none' ? '' : unit}`,
+      [val]: `${invert ? (1 / val).toString().replace(/\.?\0+$/, '') : val}${
+        unit === 'none' ? '' : unit
+      }`,
     }),
     {}
   ) as FibonacciSpacing;
