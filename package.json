@@ -1,6 +1,6 @@
 {
   "name": "@quassum/fibonacci-spacing",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Spacing for your design system, but it's fibonacci!",
   "main": "build/index.js",
   "module": "build/index.es.js",
