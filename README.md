@@ -1,5 +1,11 @@
 # Fibonacci Spacing
 
+[![Build](https://img.shields.io/github/checks-status/quassum/fibonacci-spacing/main)](https://github.com/quassum/fibonacci-spacing/actions)
+[![NPM Version](https://img.shields.io/npm/v/@quassum/fibonacci-spacing)](https://www.npmjs.com/package/@quassum/fibonacci-spacing)
+[![NPM Downloads](https://img.shields.io/npm/dm/@quassum/fibonacci-spacing)](https://www.npmjs.com/package/@quassum/fibonacci-spacing)
+[![gzipped size](https://img.badgesize.io/https:/unpkg.com/@quassum/fibonacci-spacing@latest/build/index.es.js?label=gzipped&compression=gzip&style=flat-square)](https://unpkg.com/@quassum/fibonacci-spacing@latest/build/index.es.js)
+[![License](https://img.shields.io/npm/l/@quassum/fibonacci-spacing)](https://github.com/quassum/fibonacci-spacing/blob/main/LICENSE)
+
 Spacing for a design system, but it's fibonacci!
 
 ## Install
