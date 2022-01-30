@@ -67,6 +67,18 @@ spacing[8]; // '0.125rem'
 // etc
 ```
 
+## TypeScript
+
+When you run `getFibonacciSpacing` function, the returned result is typed as [literal string types](https://www.typescriptlang.org/docs/handbook/literal-types.html), so the types you get are the same as the values.
+
+```js
+const spacing = getFibonacciSpacing();
+
+const first = spacing[1]
+// value: '1px'
+// intellisense type: '1px'
+```
+
 ## Contributors
 
 - [Antoni Silvestrovic (author)](https://github.com/bring-shrubbery)
