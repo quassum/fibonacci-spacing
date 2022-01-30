@@ -6,6 +6,8 @@
 [![gzipped size](https://img.badgesize.io/https:/unpkg.com/@quassum/fibonacci-spacing@latest/build/index.es.js?label=gzipped&compression=gzip&style=flat-square)](https://unpkg.com/@quassum/fibonacci-spacing@latest/build/index.es.js)
 [![License](https://img.shields.io/npm/l/@quassum/fibonacci-spacing)](https://github.com/quassum/fibonacci-spacing/blob/main/LICENSE)
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/bring.shrubbery)
+
 Spacing for a design system, but it's fibonacci!
 
 ## Install
