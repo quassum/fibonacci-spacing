@@ -35,7 +35,7 @@ const FIBONACCI: FibonacciKey[] = [
 /**
  * Returns Fibonacci Spacing based on the options.
  */
-export const getFibonacciSpacing = <S extends Unit>(
+export const getFibonacciSpacing = <S extends Unit = 'px'>(
   options?: Options<S>
 ): FibonacciSpacing<S> => {
   const { unit = 'px', invert } = options;
